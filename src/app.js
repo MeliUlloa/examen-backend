@@ -117,7 +117,7 @@ app.post('/producto/crear', async (req, res) => {
 });
 
 // EDITAR UN PRODUCTO
-app.put("/producto/editar/", async (req, res) => {
+app.put("/producto/editar", async (req, res) => {
     const { query } = req; //desestructuracion equivalente a poner query=req.query lo que sigue al signo de preguntas, ej: id=1
     //console.log(query);
     const { id } = query; //desestructuracion equivalente a poner id=query.id
